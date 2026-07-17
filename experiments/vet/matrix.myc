@@ -1,0 +1,26 @@
+// nodule: std.vsa.matrix
+// The `std.vsa` guarantee matrix — RFC-0016 §4.5.
+//
+// Encodes, as a data table, the per-`(model, op)` guarantee tags that the
+// **normative RFC-0003 §4 matrix** (as corrected by the r3 §4.1 erratum) assigns.  The table
+// **mirrors** `mycelium_vsa::RFC0003_MATRIX` (M-242) — it does not re-derive the tags.  Tests
+// assert the table against the kernel matrix so divergence is caught mechanically (VR-5/C2).
+//
+// ## Why a separate table here?
+//
+// `mycelium-vsa::RFC0003_MATRIX` encodes the *operation-level* literature tags (the model × op
+// × strength triple) and is the authoritative source.  This table pairs each `(model, op)` tag
+// with the **EXPLAIN-able?** column from `vsa.md §4`.  Fallibility/effects are **not** encoded
+// here — each op documents its explicit error set on its `ops.rs` signature; the [`OpGuarantee`]
+// data model below carries `tag` + `explain_able` only, and the tests assert exactly that.
+// @summary: best-effort transpilation via mycelium-transpile (M-873). Declared,
+// unvalidated — no Mycelium parser/typechecker confirms this output; see the
+// accompanying .gap.json for every construct this pass could not express.
+nodule std.vsa.matrix;
+
+// Declared: co-emitted guarantee-lattice type — referenced in this file but not declared here and not available via a resolved batch `use` (ORACLE-R1 A2; never silent unknown-type file poison — G2/VR-5). Variants use DN-140 `*_kw` renames for the reserved lattice keywords (Exact/Proven/Empirical/Declared).
+// Declared: renamed Exact -> Exact_kw (reserved-word collision, DN-140)
+// Declared: renamed Proven -> Proven_kw (reserved-word collision, DN-140)
+// Declared: renamed Empirical -> Empirical_kw (reserved-word collision, DN-140)
+// Declared: renamed Declared -> Declared_kw (reserved-word collision, DN-140)
+type GuaranteeStrength = Exact_kw | Proven_kw | Empirical_kw | Declared_kw;

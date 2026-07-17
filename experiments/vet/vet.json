@@ -1,0 +1,103 @@
+{
+  "records": [
+    {
+      "myc_file": "/tmp/myc-decompose/work/mycelium-std-vsa-myc/experiments/vet/encoding.myc",
+      "source_file": "/root/git/isolated/mycelium/crates/mycelium-std-vsa/src/encoding.rs",
+      "class": "Clean",
+      "exit_code": 0,
+      "diagnostic": "",
+      "non_test_items": 3,
+      "emitted_items": 0
+    },
+    {
+      "myc_file": "/tmp/myc-decompose/work/mycelium-std-vsa-myc/experiments/vet/lib.myc",
+      "source_file": "/root/git/isolated/mycelium/crates/mycelium-std-vsa/src/lib.rs",
+      "class": "Clean",
+      "exit_code": 0,
+      "diagnostic": "",
+      "non_test_items": 6,
+      "emitted_items": 0
+    },
+    {
+      "myc_file": "/tmp/myc-decompose/work/mycelium-std-vsa-myc/experiments/vet/matrix.myc",
+      "source_file": "/root/git/isolated/mycelium/crates/mycelium-std-vsa/src/matrix.rs",
+      "class": "Clean",
+      "exit_code": 0,
+      "diagnostic": "",
+      "non_test_items": 5,
+      "emitted_items": 1
+    },
+    {
+      "myc_file": "/tmp/myc-decompose/work/mycelium-std-vsa-myc/experiments/vet/ops.myc",
+      "source_file": "/root/git/isolated/mycelium/crates/mycelium-std-vsa/src/ops.rs",
+      "class": "Clean",
+      "exit_code": 0,
+      "diagnostic": "",
+      "non_test_items": 9,
+      "emitted_items": 0
+    },
+    {
+      "myc_file": "/tmp/myc-decompose/work/mycelium-std-vsa-myc/experiments/vet/recon.myc",
+      "source_file": "/root/git/isolated/mycelium/crates/mycelium-std-vsa/src/recon.rs",
+      "class": "Clean",
+      "exit_code": 0,
+      "diagnostic": "",
+      "non_test_items": 4,
+      "emitted_items": 0
+    }
+  ],
+  "total_non_test_items": 27,
+  "total_emitted_items": 1,
+  "total_checked_clean_items": 1,
+  "class_counts": {
+    "Clean": 5
+  },
+  "phylum": {
+    "ran": true,
+    "ok": true,
+    "nodules": [
+      {
+        "nodule": "std.vsa.encoding",
+        "file": "encoding.myc",
+        "class": "Clean",
+        "site": null,
+        "on": null,
+        "message": null
+      },
+      {
+        "nodule": "std.vsa",
+        "file": "lib.myc",
+        "class": "Clean",
+        "site": null,
+        "on": null,
+        "message": null
+      },
+      {
+        "nodule": "std.vsa.matrix",
+        "file": "matrix.myc",
+        "class": "Clean",
+        "site": null,
+        "on": null,
+        "message": null
+      },
+      {
+        "nodule": "std.vsa.ops",
+        "file": "ops.myc",
+        "class": "Clean",
+        "site": null,
+        "on": null,
+        "message": null
+      },
+      {
+        "nodule": "std.vsa.recon",
+        "file": "recon.myc",
+        "class": "Clean",
+        "site": null,
+        "on": null,
+        "message": null
+      }
+    ],
+    "diagnostic": ""
+  },
+  "total_checked_clean_items_phylum": 1
+}
