@@ -1,5 +1,12 @@
 # mycelium-std-vsa-myc
 
+<!-- FLEET-BADGES:BEGIN -->
+[![CI](https://github.com/tzervas/mycelium-std-vsa-myc/actions/workflows/fleet-ci.yml/badge.svg?branch=main)](https://github.com/tzervas/mycelium-std-vsa-myc/actions/workflows/fleet-ci.yml?query=branch%3Amain)
+[![Security](https://github.com/tzervas/mycelium-std-vsa-myc/actions/workflows/fleet-security.yml/badge.svg?branch=main)](https://github.com/tzervas/mycelium-std-vsa-myc/actions/workflows/fleet-security.yml?query=branch%3Amain)
+[![Runner](https://img.shields.io/badge/runs--on-self--hosted%20podman-informational)](https://github.com/tzervas/gha-runner-ctl)
+<!-- FLEET-BADGES:END -->
+
+
 Mycelium-language sibling of [`tzervas/mycelium-std-vsa`](https://github.com/tzervas/mycelium-std-vsa).
 
 | Field | Value |
